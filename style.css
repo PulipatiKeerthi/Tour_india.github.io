@@ -1,0 +1,98 @@
+.head{
+    background-image: url('images/tourism_background.jpg');
+    background-repeat:no-repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    font-size: 160px;
+    text-align: center;
+    font-weight: bold;
+    font-weight: 1200;
+    -webkit-font-smoothing:antialiased;
+}
+* {
+    margin:0;
+    padding:0;
+ }
+td{
+    padding: 10px;
+}
+.search{
+    /* height: 50px;
+    width: 600px; */
+    font-size: larger;
+    border-radius: 30px;
+}
+button{
+    
+    width:30px;
+    padding: 20px;
+}
+.c1{
+    width:100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #efefef;
+    line-height: 1.5;
+}
+a{
+    text-decoration: none;
+}
+.container-fluid{
+    width: 1300px;
+    max-width: 100%;
+    margin : 0 auto;
+
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card{
+    flex: 1 1 20px;
+    display: flex;
+    margin: 10px 20px;
+    align-items: center;
+    flex-direction: column;
+    background: #fff;
+    box-shadow: 0 0 15px rgba(0,0,0,0.4);
+    padding: 10px 20px;
+    align-self: normal;
+    border-radius: 30px;
+    width: 350px;
+}
+.card img{
+    max-width: 300px;
+}
+.card h2{
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    margin: 10px 0;
+}
+.card:hover{
+    background: grey;
+    color: white;
+}
+.p{
+    margin-bottom: 10px;
+
+}
+.btn{
+    display: inline-block;
+    margin-top: auto;
+    background: green;
+    color: #fff;
+    text-align: center;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+
+}

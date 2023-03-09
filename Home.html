@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tour India</title>
+    <link rel="Stylesheet" href="css/style2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <a href="#" class="brand"><img src="images/logo.png" width="405" height="50" alt="Tourism of India Logo" class="logo img-responsive"/></a>
+        <div class="menu-btn"></div>
+        <div class="navigation">
+            <div class="navigation-items">
+                <a href="Home.html" style="font-size:25px;font-weight: 900;">Home</a>
+                <a href="index.html" style="font-size:25px;font-weight: 900;">Explore</a>
+                <a href="Contact_us.html" style="font-size:25px;font-weight: 900;">Contact us</a>
+                <a href="About.html" style="font-size:25px;font-weight: 900;">About</a>
+                
+                <!--<a href="#" style="font-size:25px;font-weight: 900;">Galley</a>-->
+                
+             </div>
+        </div>
+    </header>
+    <section class="home">
+    <video class="video-slide active" src="Aalo_images/vid-4.mp4" autoplay muted loop></video>
+    <video class="video-slide" src="Aalo_images/vid-2.mp4" autoplay muted loop></video>
+    <video class="video-slide" src="Aalo_images/vid-3.mp4" autoplay muted loop></video>
+    <video class="video-slide" src="Aalo_images/vid-1.mp4" autoplay muted loop></video>
+    <video class="video-slide" src="Aalo_images/vid-5.mp4" autoplay muted loop></video>
+
+        <div class="content active">
+            <h1>Fells<br><span>Most Alive</span></h1>
+            <p><h2>Catch a wave and you’re sitting on top of the world.<br>
+                The ocean stirs the heart, inspires the imagination and brings eternal joy to the soul.</h2></p>
+            <a href="index.html">Explore Now</a>
+        </div>
+
+        <div class="content">
+            <h1>Mesmerizing<br><span>Waterfalls</span></h1>
+            <p><h2>A strong and Waterfalls Always Curve Their own path.</h2></p>
+            <a href="index.html">Explore Now</a>
+        </div>
+
+        <div class="content">
+            <h1>Happiness<br><span>In the himalayas</span></h1>
+            <p><h2>Climb the mountains and get their good tidings.<br>
+                 Nature’s peace will flow into you as sunshine flows into trees.</h2></p>
+            <a href="index.html">Explore Now</a>
+        </div>
+
+        <div class="content">
+            <h1>Sunrise<br><span>Sunset</span></h1>
+            <p><h2>Wake! For the Sun, who scatter'd into flight
+                The Stars before him from the Field of Night,
+                Drives Night along with them from Heav'n,
+                and strikes
+                The Sultan's Turret with a Shaft of Light</h2></p>
+            <a href="index.html">Explore Now</a>
+        </div>
+
+        <div class="content">
+            <h1>Peaceful<br><span>Mountains</span></h1>
+            <p><h2>Climb the mountains and get their good tidings. Nature's peace will flow into you as sunshine flows into trees.</h2></p>
+            <a href="index.html">Explore Now</a>
+        </div>
+
+        <!--<div class="media-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>-->
+        <div class="slider-navigation">
+            <div class="nav-btn active"></div>
+            <div class="nav-btn"></div>
+            <div class="nav-btn"></div>
+            <div class="nav-btn"></div>
+            <div class="nav-btn"></div>
+
+        </div>
+    </section>
+    <script type="text/javascript">
+        //javascript of responsive navbar
+        const menuBtn=document.querySelector(".menu-btn");
+        const navigation =document.querySelector(".navigation");
+
+        menuBtn.addEventListener("click",() => {
+            menuBtn.classList.toggle("active");
+            navigation.classList.toggle("active");
+
+        });
+
+         //javascript for video slider navigation
+          const btns=document.querySelectorAll(".nav-btn");
+          const slides=document.querySelectorAll(".video-slide");
+          const contents=document.querySelectorAll(".content");
+          
+      
+          var slideNav=function(manual){
+          btns.forEach((btn) => {
+            btn.classList.remove("active");
+          });
+
+          slides.forEach((slide) => {
+            slide.classList.remove("active");
+          });
+
+          contents.forEach((content) => {
+            content.classList.remove("active");
+          });
+
+            btns[manual].classList.add("active");
+            slides[manual].classList.add("active");
+            contents[manual].classList.add("active");
+          }
+
+          btns.forEach((btn,i) => {
+            btn.addEventListener("click",() =>{
+                slideNav(i);
+            });
+          });
+    </script>
+</body>
+</html>
